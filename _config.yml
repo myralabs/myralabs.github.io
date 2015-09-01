@@ -5,26 +5,18 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Myra Labs
-tagline:             Writings
-url:                 http://blog.myralabs.com
-paginate:            1
-baseurl:             ""
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+title:               Lanyon
+tagline:             'A Jekyll theme'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
 
 # About/contact
 author:
-  name:              Viksit Gaur
-  url:               https://twitter.com/viksit
-  email:             hello@myralabs.com
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
 # Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/myralabs/myralabs.github.io
+version:             1.0.0

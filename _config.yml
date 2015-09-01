@@ -1,0 +1,30 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Myra Labs
+tagline:             Writings
+url:                 http://blog.myralabs.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Viksit Gaur
+  url:               https://twitter.com/viksit
+  email:             hello@myralabs.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/myralabs/myralabs.github.io

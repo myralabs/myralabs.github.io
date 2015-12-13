@@ -2,13 +2,13 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+# relative_permalinks: true
 
 # Setup
 title:               Myra Labs
 tagline:             The Blog
-description:         The <i>Completely</i> automated assistant you can text.
-url:                 http://myralabs.com
+# description:         Conversational AI as a service
+url:                 http://blog.myralabs.com
 baseurl:             ''
 paginate:            5
 
@@ -20,3 +20,5 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+gems: [jekyll-paginate]

@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Messaging and Artificial Intelligence.
+Myra Labs offers conversational AI as a service. Say hi at hello@myralabs.com!

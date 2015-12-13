@@ -1,14 +1,54 @@
 ---
 layout: default
 ---
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 <div class="post">
+
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+
+  {{ content }}<br>
+
+  meta<br>
+  k: {{site.version}}<br>
+  a: {{site.disqusid}}<br>
+  b: {{page.url}}<bR>
+
+  {% if page.comments %}
+     * comment enabled
+
+    <div id="disqus_thread"></div>
+    <script>
+
+      var disqus_config = function () {
+        this.disqus_shortname = "myralabs";
+        this.page.url = "{{ page.url }}";
+        this.page.identifier = "{{ site.disqusid }}{{ page.url | replace:'index.html','' }}";
+      };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//myralabs.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <noscript>
+      Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+
+{% endif %}
+
+
 </div>
 
-<div class="related">
+
+<!--
+    <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
@@ -23,3 +63,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+ -->

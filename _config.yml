@@ -20,5 +20,10 @@ author:
 
 # Custom vars
 version:             1.0.0
+disqusid: myralabs
 
-gems: [jekyll-paginate]
+gems:
+  [jekyll-paginate]
+
+markdown:
+  kramdown

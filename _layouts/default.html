@@ -25,13 +25,17 @@
         {{ content }}
       </div>
 
+      {% if page.nofooter == null %}
       <div class="container footer">
         <hr>
         <p>
-          &copy; Myra Labs Inc. {{ site.time | date: '%Y' }}. Rights reserved by respective owners.
+          <small>
+            &copy; Myra Labs Inc. {{ site.time | date: '%Y' }}. Rights reserved by respective owners.
+          </small>
+
         </p>
       </div>
-
+      {% endif %}
 
     </div>
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>

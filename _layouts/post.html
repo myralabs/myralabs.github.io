@@ -10,16 +10,11 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
 
-  {{ content }}<br>
-
-  meta<br>
-  k: {{site.version}}<br>
-  a: {{site.disqusid}}<br>
-  b: {{page.url}}<bR>
-  <div>
-
-  {% include disqus.html %}
-
+  {{ content }}
+  <br>
+  <hr>
+  <div style="margin-top: 25px;">
+    {% include disqus.html %}
   </div>
 
 </div>

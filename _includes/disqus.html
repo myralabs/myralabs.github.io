@@ -1,13 +1,11 @@
 <!-- Disqus comments -->
-{% if post.comments %}
+{% if page.comments %}
 
     <div id="disqus_thread"></div>
     <script>
 
       var disqus_config = function () {
-        this.disqus_shortname = 'myralabs';
-        this.page.url = {{ page.url }};
-        this.page.identifier = {{ site.disqusid }}{{ page.url | replace:'index.html','' }};
+        this.disqus_shortname = "myralabs";
       };
 
       (function() { // DON'T EDIT BELOW THIS LINE

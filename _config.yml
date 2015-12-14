@@ -27,3 +27,5 @@ gems:
 
 markdown:
   kramdown
+
+highlighter: 'pygments'
